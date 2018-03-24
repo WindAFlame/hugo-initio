@@ -1,3 +1,5 @@
+
+{{ if .Site.Params.upperFooterEnable }}
 <footer id="footer">
 	<div class="container">
 		<div class="row">
@@ -5,10 +7,12 @@
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Contact</h3>
 				<div class="widget-body">
-					<p>{{ .Site.Params.phone }}<br>
-						<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>
+					<p>
+						{{ .Site.Params.phone }}
 						<br>
-						{{ .Site.Params.address }}
+						<i class="fa fa-envelope"></i> <a href="mailto:{{ .Site.Params.email }}"  target="_blank">{{ .Site.Params.email }}</a>
+						<br>
+						<i class="fa fa-at"></i> {{ .Site.Params.address }}
 					</p>
 				</div>
 			</div>
@@ -55,24 +59,19 @@
 		</div> <!-- /row of widgets -->
 	</div>
 </footer>
+{{ end }}
 
 <footer id="underfooter">
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-6 widget">
+			<div class="col-md-12 widget">
 				<div class="widget-body">
-					<p>{{ .Site.Params.address }}</p>
-				</div>
-			</div>
-
-			<div class="col-md-6 widget">
-				<div class="widget-body">
-					<p class="text-right">
-						Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br>
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
-                        Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
-                    </p>
+					<p class="text-center">
+						Copyright &copy; {{ .Site.Params.year }} - {{ .Site.Params.name }}<br>
+						Original Design <a href="http://www.gettemplate.com/info/initio/" rel="design">Initio</a> by <a href="http://www.gettemplate.com/" rel="designer">GetTemplate</a>
+						~ Powered by <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
+					</p>
 				</div>
 			</div>
 
