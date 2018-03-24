@@ -33,11 +33,33 @@
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="{{ .Site.BaseURL }}images/guy.jpg" alt="">
+			<img class="img-circle" src="{{ .Site.BaseURL }}images/{{ .Site.Params.avatar }}" alt="">
 			<span class="title">{{ .Site.Params.name }}</span>
-			<span class="tagline">{{ .Site.Params.description }}<br>
-				<a href="">{{ .Site.Params.email }}</a>
-            </span>
+			{{ if .Site.Params.description }}
+			<span class="tagline">
+				{{ .Site.Params.description }}
+			</span>
+			{{ end }}
+			{{ if .Site.Params.headerEnableEmail }}
+			<span class="tagline">
+				<a href=""> <i class="fa fa-envelope"></i> {{ .Site.Params.email }}</a>
+			</span>
+			{{ end }}
+			{{ if .Site.Params.headerEnableFollowme }}
+			<span class="tagline" style="font-size: 24px;">
+					{{ range .Site.Params.social }}
+						{{ if .footer }}
+							<a href="{{ .url }}" target="_blank"><i class="fa {{ .icon }} fa-2"></i></a>
+						{{ end }}
+					{{ end }}
+					&nbsp;
+			</span>
+			{{ end }}
+			{{ if .Site.Params.tags }}
+			<span class="tagline">
+				{{ delimit .Site.Params.tags " | " }}
+			</span>
+			{{ end }}
 		</h1>
 	</div>
 
