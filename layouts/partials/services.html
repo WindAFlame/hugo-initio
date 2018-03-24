@@ -7,7 +7,18 @@
             <div class="col-sm-6 col-md-3">
                 <h3 class="text-center">{{ .Title }}</h3>
                 <p>{{ .Summary }}</p>
-                <p class="text-center"><a href="{{ .Link.url }}" class="btn btn-action">{{ .Link.buttonTxt }}</a></p>
+                <p class="text-center">
+                    <a href="{{ .Link.url }}" class="btn btn-action">{{ .Link.label }}</a>
+                </p>
+                <span class="details">
+                    {{ if .items }}
+                        {{ $len := sub (len .items) 1 }}
+                        {{ range $i, $item := where .items "id" .index }}
+                            <a target="_blank" href="{{ .url }}">{{ .name }}</a>
+                            {{ if gt $len $i }} | {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </span>
             </div>
         {{ end }}
     </div>
