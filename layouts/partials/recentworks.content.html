@@ -2,11 +2,11 @@
 
     <h2 class="section-title"><span>{{ .Site.Params.Section.Recentworks.title }}</span></h2>
     
-    <div    >
+    <div >
 
         {{ range where .Data.Pages "Section" "recentworks" }}
 
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center" style="margin-bottom: 25px;">
             <h3>{{ .Title }}</h3>
             <p>{{ .Description }}</p>
 
