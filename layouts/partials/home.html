@@ -11,7 +11,11 @@
         {{ end }}
 
         {{ if .Site.Params.Section.Recentworks.show }}
-            {{ partial "recentworks.summary.html" . }}
+            {{ if (eq .Site.Params.Section.Recentworks.type "image") }}
+                {{ partial "recentworks.image.html" . }}
+            {{ else if (eq .Site.Params.Section.Recentworks.type "summary") }}
+                {{ partial "recentworks.summary.html" . }}
+            {{ end }}
         {{ end }}
 
         {{ if .Site.Params.Section.Download.show }}
