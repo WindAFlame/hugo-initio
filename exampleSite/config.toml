@@ -31,7 +31,7 @@ publishDir = "public"
 
 [params.section.subheader]
     show = true
-    text = 'Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. you <a href="#">measure</a> yourself by the people who measure themselves by you. it only took me <a href="#">six days</a>.'
+    text = ""
 
 [params.section.service]
     show = true
@@ -60,7 +60,7 @@ publishDir = "public"
 
 [params.sharethis]
     property = "123456789012345678901234"
-    custom = true
+    custom = false
 
 [params.google.analytics]
     trackerID = "GA-000000000-0"
