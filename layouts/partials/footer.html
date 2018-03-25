@@ -1,9 +1,9 @@
 
-{{ if .Site.Params.upperFooterEnable }}
+{{ if .Site.Params.Section.Upperfooter.show }}
 <footer id="footer">
 	<div class="container">
 		<div class="row">
-			{{ if .Site.Params.footerEnableContact }}
+			{{ if .Site.Params.Section.Upperfooter.enableContact }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Contact</h3>
 				<div class="widget-body">
@@ -18,7 +18,7 @@
 			</div>
 			{{ end }}
 
-			{{ if .Site.Params.footerEnableFollowme }}
+			{{ if .Site.Params.Section.Upperfooter.enableFollowme }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Follow me</h3>
 				<div class="widget-body">
@@ -33,7 +33,7 @@
 			</div>
 			{{ end }}
 
-			{{ if .Site.Params.footerEnableTextWidget }}
+			{{ if .Site.Params.Section.Upperfooter.enableTextWidget }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Text widget</h3>
 				<div class="widget-body">
@@ -43,7 +43,7 @@
 			</div>
 			{{ end }}
 
-			{{ if .Site.Params.footerEnableFormWidget }}
+			{{ if .Site.Params.Section.Upperfooter.enableFormWidget }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Form widget</h3>
 				<div class="widget-body">
