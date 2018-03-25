@@ -37,12 +37,12 @@
 				{{ .Site.Params.description }}
 			</span>
 			{{ end }}
-			{{ if .Site.Params.headerEnableEmail }}
+			{{ if .Site.Params.Section.Header.enableEmail }}
 			<span class="tagline">
 				<a href=""> <i class="fa fa-envelope"></i> {{ .Site.Params.email }}</a>
 			</span>
 			{{ end }}
-			{{ if .Site.Params.headerEnableFollowme }}
+			{{ if .Site.Params.Section.Header.enableFollowme }}
 			<span class="tagline" style="font-size: 24px;">
 					{{ range .Site.Params.social }}
 						{{ if .header }}
