@@ -11,7 +11,7 @@
         {{ end }}
 
         {{ if .Site.Params.Section.Recentworks.show }}
-            {{ partial "recentworks.html" . }}
+            {{ partial "recentworks.summary.html" . }}
         {{ end }}
 
         {{ if .Site.Params.Section.Download.show }}
