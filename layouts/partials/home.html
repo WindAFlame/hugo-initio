@@ -2,23 +2,23 @@
 
 	<div class="container">
 
-        {{ if .Site.Params.showSubheader }}
+        {{ if .Site.Params.Section.Subheader.show }}
             {{ partial "subheader.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.showServices }}
+        {{ if .Site.Params.Section.Service.show }}
             {{ partial "services.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.showRecentWorks }}
+        {{ if .Site.Params.Section.Recentworks.show }}
             {{ partial "recentworks.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.showDownload }}
+        {{ if .Site.Params.Section.Download.show }}
             {{ partial "download.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.showClients }}
+        {{ if .Site.Params.Section.Clients.show }}
             {{ partial "clients.html" . }}
         {{ end }}
 
