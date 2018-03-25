@@ -19,11 +19,11 @@
             </p>
 
             <span class="details">
-                {{ $len := sub (len .Params.tags) 1 }}
+                {{ $len := (len .Params.tags) }}
                 {{ if gt $len 0 }}
                     {{ range $i, $item := .Params.tags }}
                         <a href="{{ $item.url }}">{{ $item.name }}</a>
-                        {{ if gt $len $i }} | {{ end }}
+                        {{ if gt (sub $len 1) $i }} | {{ end }}
                     {{ end }}
                 {{ end }}
             </span>
