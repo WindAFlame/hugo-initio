@@ -1,30 +1,20 @@
-baseURL = "https://miguelsimoni.github.io/hugo-initio-site/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
-publishDir = "docs"
+publishDir = "public"
 
 [params]
-    name = "Anthony Russel"
+    avatar = "avatar_man.png"
+    name = "Endy WindAflame"
     description = "A mystery person"
-    email = "anthony.russel42@example.com"
+    email = "endy.windaflame@example.com"
     phone = "+234 23 9873237"
     address = "234 Hidden Pond Road, Ashland City, TN 37015"
     year = 2017
     background = ""
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
-
-    showSubheader = true
-    showServices = true
-    showRecentWorks = true
-    showDownload = true
-    showClients = true
-
-    footerEnableContact = true
-    footerEnableFollowme = true
-    footerEnableTextWidget = true
-    footerEnableFormWidget = true
 
 [[menu.main]]
     name = "home"
@@ -34,6 +24,36 @@ publishDir = "docs"
     name = "blog"
     url = "/post/"
     weight = 5
+
+[params.section.header]
+    enableEmail = true
+    enableFollowme = true
+
+[params.section.subheader]
+    show = true
+    text = 'Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. you <a href="#">measure</a> yourself by the people who measure themselves by you. it only took me <a href="#">six days</a>.'
+
+[params.section.service]
+    show = true
+    title = "Services"
+
+[params.section.recentworks]
+    show = true
+    title = "Recent Works"
+
+[params.section.download]
+    show = true
+
+[params.section.clients]
+    show = true
+    title = "Clients"
+
+[params.section.upperfooter]
+    show = true
+    enableContact = true
+    enableFollowme = true
+    enableTextWidget = true
+    enableFormWidget = true
 
 [params.disqus]
     site = "hugo-initio-site.disqus.com"
@@ -46,9 +66,26 @@ publishDir = "docs"
     trackerID = "GA-000000000-0"
 
 [[params.social]]
+	title = "youtube"
+	url = "http://www.youtube.com/"
+    icon = "fa-youtube-play"
+    header = true
+    footer = false
+    sharethis = true
+    network = "youtube"
+[[params.social]]
+	title = "twitch"
+	url = "http://www.twitch.com/"
+    icon = "fa-twitch"
+    header = true
+    footer = false
+    sharethis = true
+    network = "twitch"
+[[params.social]]
 	title = "facebook"
 	url = "https://www.facebook.com/nickname"
     icon = "fa-facebook-square"
+    header = true
     footer = true
     sharethis = true
     network = "facebook"
@@ -56,6 +93,7 @@ publishDir = "docs"
 	title = "twitter"
 	url = "https://twitter.com/nickname"
     icon = "fa-twitter-square"
+    header = true
     footer = true
     sharethis = true
     network = "twitter"
@@ -63,6 +101,7 @@ publishDir = "docs"
 	title = "instagram"
 	url = "https://www.instagram.com/nickname"
     icon = "fa-instagram"
+    header = true
     footer = true
     sharethis = false
     network = ""
@@ -70,6 +109,7 @@ publishDir = "docs"
 	title = "google+"
 	url = "https://plus.google.com/+nickname"
     icon = "fa-google-plus-square"
+    header = true
     footer = false
     sharethis = true
     network = "googleplus"
@@ -77,6 +117,7 @@ publishDir = "docs"
 	title = "linkedin"
 	url = "https://www.linkedin.com/in/nickname"
     icon = "fa-linkedin-square"
+    header = true
     footer = false
     sharethis = true
     network = "linkedin"
@@ -84,6 +125,7 @@ publishDir = "docs"
 	title = "tumblr"
 	url = "https://nickname.tumblr.com"
     icon = "fa-tumblr-square"
+    header = true
     footer = false
     sharethis = false
     network = "tumblr"
@@ -91,6 +133,7 @@ publishDir = "docs"
 	title = "github"
 	url = "https://github.com/nickname"
     icon = "fa-github"
+    header = true
     footer = true
     sharethis = false
     network = ""
@@ -98,6 +141,7 @@ publishDir = "docs"
 	title = "email"
 	url = "mailto:some.email@somewhere.com"
     icon = "fa-envelope"
+    header = false
     footer = false
     sharethis = true
     network = "email"
