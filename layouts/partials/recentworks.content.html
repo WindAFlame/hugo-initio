@@ -1,0 +1,36 @@
+<div class="row section featured topspace">
+
+    <h2 class="section-title"><span>{{ .Site.Params.Section.Recentworks.title }}</span></h2>
+    
+    <div    >
+
+        {{ range where .Data.Pages "Section" "recentworks" }}
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Description }}</p>
+
+            <p>
+                {{ if .Params.linkurl }}
+                <a href="{{ .Params.linkurl }}" class="btn btn-action">{{ .Params.linkLabel }}</a>
+                {{ else }}
+                <a href="{{ .Permalink }}" class="btn btn-action">See details</a>
+                {{ end }}
+            </p>
+
+            <span class="details">
+                {{ $len := sub (len .Params.tags) 1 }}
+                {{ if gt $len 0 }}
+                    {{ range $i, $item := .Params.tags }}
+                        <a href="{{ $item.url }}">{{ $item.name }}</a>
+                        {{ if gt $len $i }} | {{ end }}
+                    {{ end }}
+                {{ end }}
+            </span>
+
+        </div>
+
+        {{ end }}
+
+    </div>
+</div> <!-- / section -->
