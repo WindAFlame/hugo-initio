@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://windaflame.github.io/hugo-initio/"
 languageCode = "en-us"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
@@ -39,7 +39,9 @@ publishDir = "public"
 
 [params.section.recentworks]
     show = true
-    # Choose type "image" or "summary"
+    # Choose type "image", "summary" or "content"
+    # For type image and summary. The content is loaded from data/recentworks.json.
+    # For type content. The content is loaded by article from content/recentworks/*.md.
     type = "image"
     title = "Recent Works"
 
