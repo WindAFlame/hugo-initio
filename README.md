@@ -18,31 +18,50 @@
 
 ```
 $ cd /<your-hugo-site-directory>
-$ git submodule add https://github.com/miguelsimoni/hugo-initio.git themes/hugo-initio
+$ git submodule add https://github.com/windaflame/hugo-initio.git themes/hugo-initio
 ```
 
 More info: [hugo setup guide](https://gohugo.io/overview/installing/)
 
 ## Configuration
 
-[Example Site](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite)
+[Example Site](https://github.com/windaflame/hugo-initio/tree/master/exampleSite)
 
-[config.toml](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite/config.toml)
+[config.toml](https://github.com/windaflame/hugo-initio/tree/master/exampleSite/config.toml)
 
 ### Sections
 
 
 ```toml
-showSubheader = true
-showServices = true
-showRecentWorks = true
-showDownload = true
-showClients = true
+[params.section.header]
+    enableEmail = true
+    enableFollowme = true
 
-footerEnableContact = true
-footerEnableFollowme = true
-footerEnableTextWidget = false
-footerEnableFormWidget = false
+[params.section.subheader]
+    show = true
+    text = 'Your text here.'
+
+[params.section.service]
+    show = true
+    title = "Services"
+
+[params.section.recentworks]
+    show = true
+    title = "Recent Works"
+
+[params.section.download]
+    show = true
+
+[params.section.clients]
+    show = true
+    title = "Clients"
+
+[params.section.upperfooter]
+    show = true
+    enableContact = true
+    enableFollowme = true
+    enableTextWidget = true
+    enableFormWidget = true
 ```
 ### Social Networks Icons
 
@@ -53,12 +72,13 @@ You can add as many social networks as you want in the params.social array follo
   title = "facebook"
   url = "https://www.facebook.com/nickname"
   icon = "fa-facebook-square"
+  header = true
   footer = true
   sharethis = true
   network = "facebook"
 ```
 
-See the whole configuration in the [config.toml](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite/config.toml) file.
+See the whole configuration in the [config.toml](https://github.com/windaflame/hugo-initio/tree/master/exampleSite/config.toml) file.
 
 ### Comments
 
@@ -100,8 +120,8 @@ Now enter [`http://localhost:1313/hugo-initio-site/`](http://localhost:1313/hugo
 - Found a bug?
 - Got an idea for a new feature?
 
-Let me know it using the [issue tracker](https://github.com/miguelsimoni/hugo-initio/issues).
-Or make it directly: [pull request](https://github.com/miguelsimoni/hugo-initio/pulls).
+Let me know it using the [issue tracker](https://github.com/windaflame/hugo-initio/issues).
+Or make it directly: [pull request](https://github.com/windaflame/hugo-initio/pulls).
 
 ## License
 
@@ -109,4 +129,5 @@ This port is released under the MIT License. Check the [original theme license](
 
 ## Thanks
 
+Thanks to [miguelsimoni](https://github.com/miguelsimoni) for the original port to hugo.
 Thanks to [Steve Francia](https://github.com/spf13) for creating Hugo and the awesome community around the project. And also thanks to [Sergey Pozhilov](http://www.gettemplate.com/) for creating this awesome theme.
