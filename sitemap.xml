@@ -7,6 +7,10 @@
   </url>
   
   <url>
+    <loc>https://windaflame.github.io/hugo-initio/recentworks/hugo-initio/</loc>
+  </url>
+  
+  <url>
     <loc>https://windaflame.github.io/hugo-initio/post/vivamus-lacus-mauris/</loc>
     <lastmod>2013-06-17T12:00:00+00:00</lastmod>
   </url>
@@ -33,6 +37,11 @@
   <url>
     <loc>https://windaflame.github.io/hugo-initio/post/</loc>
     <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://windaflame.github.io/hugo-initio/recentworks/</loc>
     <priority>0</priority>
   </url>
   

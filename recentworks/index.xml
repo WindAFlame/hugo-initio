@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recentworks on Initio - Free, multipurpose html5 template by GetTemplate</title>
+    <link>https://windaflame.github.io/hugo-initio/recentworks/</link>
+    <description>Recent content in Recentworks on Initio - Free, multipurpose html5 template by GetTemplate</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://windaflame.github.io/hugo-initio/recentworks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo-Initio</title>
+      <link>https://windaflame.github.io/hugo-initio/recentworks/hugo-initio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://windaflame.github.io/hugo-initio/recentworks/hugo-initio/</guid>
+      <description>Combina el poder, rapidez y flexibilidad de Hugo con la elegancia y versatilidad de Initio. La plantilla gratuita de Bootstrap Initio fue diseñada por GetTemplate para ser el punto inicial en el desarrollo de tu sitio web para portafolio personal o blog. La adaptación de esta plantilla a Hugo Themes permite automatizar muchas funciones utilizando las capacidades del generador de sitios estáticos.
+ Tema de Hugo | Live Demo | Proyecto | Plantilla original</description>
+    </item>
+    
+  </channel>
+</rss>
