@@ -1,6 +1,6 @@
 <div class="row section featured topspace">
 
-    <h2 class="section-title"><span>{{ .Site.Params.servicesTitle }}</span></h2>
+    <h2 class="section-title"><span>{{ .Site.Params.Section.Service.title }}</span></h2>
 
     <div class="">
         {{ range where .Data.Pages "Section" "service" }}
@@ -8,17 +8,8 @@
                 <h3 class="text-center">{{ .Title }}</h3>
                 <p>{{ .Summary }}</p>
                 <p class="text-center">
-                    <a href="{{ .Link.url }}" class="btn btn-action">{{ .Link.label }}</a>
+                    <a href="{{ .Permalink }}" class="btn btn-action">Read more</a>
                 </p>
-                <span class="details">
-                    {{ if .items }}
-                        {{ $len := sub (len .items) 1 }}
-                        {{ range $i, $item := where .items "id" .index }}
-                            <a target="_blank" href="{{ .url }}">{{ .name }}</a>
-                            {{ if gt $len $i }} | {{ end }}
-                        {{ end }}
-                    {{ end }}
-                </span>
             </div>
         {{ end }}
     </div>
