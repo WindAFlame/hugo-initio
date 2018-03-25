@@ -39,6 +39,8 @@ publishDir = "public"
 
 [params.section.recentworks]
     show = true
+    # Choose type "image" or "summary"
+    type = "image"
     title = "Recent Works"
 
 [params.section.download]
