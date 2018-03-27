@@ -27,6 +27,7 @@ body {
   border-radius: 0;
   background-clip: padding-box;
   width: 100%;
+  z-index: 1;
 }
 .navbar.stick {
   position: fixed;
