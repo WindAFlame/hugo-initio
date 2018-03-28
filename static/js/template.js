@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
 	var my_nav = $('.navbar-sticky');
-	var my_content = $('#content');
+	var my_content = $('#main');
 	// grab the initial top offset of the navigation 
 	var sticky_navigation_offset_top = my_nav.offset().top;
 	
