@@ -19,12 +19,16 @@
             </p>
 
             <span class="details">
-                {{ if .Params.tags }}
-                    {{ $len := (len .Params.tags) }}
-                    {{ if gt $len 0 }}
-                        {{ range $i, $item := .Params.tags }}
-                            <a href="{{ $item.url }}">{{ $item.name }}</a>
-                            {{ if gt (sub $len 1) $i }} | {{ end }}
+                {{ if and (.Params.nametags) (.Params.urltags) }}
+                    {{ if eq (len .Params.nametags) (len .Params.urltags) }}
+                        {{ $arrayName := .Params.nametags }}
+                        {{ $arrayUrl := .Params.urltags }}
+                        {{ $len := (len $arrayName) }}
+                        {{ if gt $len 0 }}
+                            {{ range $i, $item := $arrayName }}
+                                <a href="{{ index $arrayUrl $i }}">{{ $item }}</a>
+                                {{ if gt (sub $len 1) $i }} | {{ end }}
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                 {{ end }}
