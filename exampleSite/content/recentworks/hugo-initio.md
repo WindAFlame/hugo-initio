@@ -5,8 +5,8 @@ description: "Adaptación a Hugo del tema Initio de GetTemplate."
 image: "../img/hugo-initio.jpg"
 linkurl: ""
 linklabel: ""
-tags: [ 
-]
+nametags: [ "angularjs" ]
+urltage: [ "#" ]
 weight: 10
 ---
 
